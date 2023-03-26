@@ -1,1 +1,112 @@
+/*
+#FFFFFF - hvid
+#9B3C7D - mørk lilla
+#F1C9CD - rosa
+#FBE355 - gul
+#E4F1F0 - lys blå
+#00796B - mellem blå
+#00454E - mørk blå
+*/
+body {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+footer {
+  background-color: #00454E;
+}
 
+/* Asger start */
+
+/* Asger slut */
+
+
+
+/* Jacob start */
+
+/* Jacob slut */
+
+
+
+/* Jasmin start */
+
+/* Jasmin slut */
+
+
+
+/* Frede start */
+.hbmenu {
+  position: relative;
+  display: block;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  z-index: 99;
+  margin-right: 10px;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: solid #00454E 3px;
+  border-radius: 50px;
+}
+
+.hbmenu .bar, .hbmenu:after, .hbmenu:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #00454E;
+  margin: 3px 0px;
+  transition: 0.4s;
+}
+/*aktivering af hb menu*/
+.hbmenu.aktivnu:before {
+  transform: rotate(-45deg) translate(-3.5px, 3.5px);
+}
+.hbmenu.aktivnu:after {
+  transform: rotate(45deg) translate(-3.5px, -3.5px);
+}
+.hbmenu.aktivnu .bar{
+  opacity: 0;
+}
+
+/* slide til side bar*/
+.mobil-nav {
+	position: fixed;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 98;
+	background-color: #F1C9CD;
+	padding: 30px 10px 0px;
+	transition: 0.4s;
+}
+
+.mobil-nav.aktivnu {
+	left: 0;
+}
+
+.mobil-nav a {
+	display: block;
+	max-width: 600px;
+	text-align: left;
+	background-color: #F1C9CD;
+	color: #00454E;
+	text-decoration: none;
+}
+
+/*ændring af tekst i nav*/
+.bm-links a {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bm-head a {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+/* Frede slut */
