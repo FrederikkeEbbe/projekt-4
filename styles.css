@@ -7,6 +7,12 @@
 #00796B - mellem blå
 #00454E - mørk blå
 */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
