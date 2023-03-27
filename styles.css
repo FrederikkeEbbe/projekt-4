@@ -7,19 +7,34 @@
 #00796B - mellem blå
 #00454E - mørk blå
 */
-
 * {
   margin: 0px;
   padding: 0px;
 }
-
 body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
 }
-footer {
-  background-color: #00454E;
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p {
+  font-size: 16.5px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* Asger start */
@@ -41,41 +56,82 @@ footer {
 
 
 /* Frede start */
+/* Header*/
+header {
+  background-color: #E4F1F0;
+  padding: 35px 20px;
+}
+.head-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-logo {
+  width: 200px;
+  height: 50px;
+  background-color: #00454E;
+}
+
+/* Social section*/
+.social-sec {
+  background-color: #00454E;
+  color: #FBE355;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+.social-sec a {
+color: #E4F1F0;
+}
+.follow-div{
+  width: 250px;
+  height: 400px;
+  background-color: #E4F1F0;
+  border-radius: 20px;
+}
+.social-sec * {
+  margin-top: 10px;
+}
+.social-icon{
+  margin-top: 40px;
+}
+.social-link {
+  padding: 0px 5px;
+}
+
+/* burger menu */
 .hbmenu {
   position: relative;
   display: block;
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   z-index: 99;
-  margin-right: 10px;
   appearance: none;
   background: none;
   outline: none;
-  border: solid #00454E 3px;
-  border-radius: 50px;
+  border: none;
 }
-
 .hbmenu .bar, .hbmenu:after, .hbmenu:before {
   content: "";
   display: block;
   width: 100%;
-  height: 2px;
+  height: 4px;
   background-color: #00454E;
-  margin: 3px 0px;
+  margin: 4px 0px;
   transition: 0.4s;
 }
 /*aktivering af hb menu*/
 .hbmenu.aktivnu:before {
-  transform: rotate(-45deg) translate(-3.5px, 3.5px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 .hbmenu.aktivnu:after {
-  transform: rotate(45deg) translate(-3.5px, -3.5px);
+  transform: rotate(45deg) translate(-5px, -5px);
 }
 .hbmenu.aktivnu .bar{
   opacity: 0;
 }
-
 /* slide til side bar*/
 .mobil-nav {
 	position: fixed;
@@ -89,30 +145,62 @@ footer {
 	padding: 30px 10px 0px;
 	transition: 0.4s;
 }
-
 .mobil-nav.aktivnu {
 	left: 0;
 }
-
 .mobil-nav a {
 	display: block;
 	max-width: 600px;
 	text-align: left;
 	background-color: #F1C9CD;
 	color: #00454E;
-	text-decoration: none;
 }
-
 /*ændring af tekst i nav*/
 .bm-links a {
   font-size: 30px;
   font-weight: 700;
 }
-
 .bm-head a {
   font-size: 40px;
   font-weight: 700;
 }
 
 
+
+/*footer*/
+footer {
+  background-color: #00454E;
+  padding: 5px 35px 35px;
+}
+.foot-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.foot-text {
+  display: flex;
+  flex-direction: column;
+}
+.foot-h {
+  color: #FBE355;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.foot-p {
+  color: #E4F1F0;
+}
+.foot-img {
+  width: 150px;
+  height: 150px;
+  background-color: #FBE355;
+  align-self: center;
+  margin-right: 20px;
+}
+.foot-banner p {
+  display: flex;
+  color: #E4F1F0;
+  margin-top: 60px;
+  font-size: 10px;
+  justify-content: center;
+}
 /* Frede slut */
