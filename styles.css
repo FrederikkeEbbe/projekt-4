@@ -10,6 +10,9 @@
 * {
   margin: 0px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   font-family: proxima-nova, sans-serif;
@@ -31,12 +34,48 @@ h3 {
 p {
   font-size: 16.5px;
 }
-
 a {
   cursor: pointer;
   text-decoration: none;
 }
+.btn-prim {
+  height: 55px;
+  padding: 0px 45px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: proxima-nova, sans-serif;
+  background-color: #00454E;
+  color: #E4F1F0;
+  border: none;
+  border-radius: 5px;
+}
+.btn-prim:hover {
+  border: solid #00454E;
+  background-color: #E4F1F0;
+  color: #00454E;
 
+}
+.btn-prim:active{
+  height: 50px;
+  padding: 0px 40px;
+}
+
+.btn-gul {
+  padding: 15px 45px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: proxima-nova, sans-serif;
+  background-color: #FBE355;
+  color: #00796B;
+  border: none;
+}
+.btn-gul:hover {
+  background-color: #00796B;
+  color: #E4F1F0;
+}
+.btn-gul:active {
+  opacity: 0.8;
+}
 /* Asger start */
 
 /* Asger slut */
@@ -71,6 +110,17 @@ header {
   height: 50px;
   background-color: #00454E;
 }
+
+/* Event kommende */
+.event-kommende {
+  background-color: #E4F1F0;
+  padding: 35px;
+}
+
+.event-kommende h2, h3, p {
+  color: #00454E;
+}
+
 
 /* Social section*/
 .social-sec {
