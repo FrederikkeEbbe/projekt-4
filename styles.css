@@ -117,10 +117,41 @@ header {
   padding: 35px;
 }
 
-.event-kommende h2, h3, p {
+.event-kommende > h2, h3, p {
   color: #00454E;
 }
 
+.event-come {
+  display: flex;
+  justify-content: center;
+  background-color: #00454E;
+  width: 280px;
+  height: 150px;
+}
+
+.event-come-pic{
+  width: 200px;
+  height: 60px;
+  background-color: #F1C9CD;
+}
+
+.event-come-txt-con{
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-come-txt h3 {
+  color: #E4F1F0;
+}
+  
+.event-come-txt-p{
+  color: #E4F1F0;
+}
+  
+.event-come-date {
+  color: #E4F1F0;
+  font-size: 20px;
+}
 
 /* Social section*/
 .social-sec {
