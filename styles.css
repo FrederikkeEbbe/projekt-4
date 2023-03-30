@@ -128,23 +128,13 @@ a {
 
 
 /* Jacob start */
-<<<<<<< Updated upstream
-.event-scroll {
-=======
-
 /* Event show start*/
 #bcolor{
->>>>>>> Stashed changes
   background-color: #E4F1F0;
   padding-bottom: 4rem;
 }
 
-<<<<<<< Updated upstream
-.event-scroll>h2,
-p {
-=======
 #event-scroll>h2,p {
->>>>>>> Stashed changes
   color: #00454E;
 }
 
@@ -155,11 +145,7 @@ p {
   margin-bottom: 15px;
 }
 
-<<<<<<< Updated upstream
-.event-scroll>h2 {
-=======
 #event-scroll>h2{
->>>>>>> Stashed changes
   text-align: center;
 }
 
@@ -176,8 +162,6 @@ p {
   height: 320px;
 }
 
-<<<<<<< Updated upstream
-=======
 .event-show-pic {
   background-color: #E4F1F0;
   height: 190px;
@@ -217,7 +201,6 @@ p {
   text-align: center;
 }
 
->>>>>>> Stashed changes
 /* Jacob slut */
 
 
