@@ -149,7 +149,7 @@ a {
   text-align: center;
 }
 
-#center {
+.center {
   display: flex;
   justify-content: center;
 }
@@ -180,7 +180,7 @@ a {
   font-size: 20px;
 }
 /*Event show slut*/
-
+/* Search start */
 .event-search {
   background-color: #E4F1F0;
   padding-bottom: 4rem;
@@ -188,6 +188,7 @@ a {
 
 .search-header>h2,p {
   color: #00454E;
+  padding-left: 33px;
 }
 
 .search-header>p {
@@ -197,9 +198,49 @@ a {
   margin-bottom: 15px;
 }
 
-.search-header>h2{
-  text-align: center;
+/* Search slut */
+
+/* Resultat start */
+
+.event-resultat {
+  background-color: #E4F1F0;
+  padding-bottom: 4rem;
 }
+
+.resultat-header {
+  color: #00454E;
+  padding-left: 33px;
+}
+
+.search-event {
+  background-color: #00454E;
+  padding: 20px;
+  width: 320px;
+  height: 215px;
+  margin-bottom: 2rem;
+  
+}
+
+.search-resultat-pic {
+  background-color: #E4F1F0;
+  height: 114px;
+  width: 100%;
+}
+
+.search-resultat-txtcenter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-resultat-txt>h3, h8 {
+  color: #ffffff;
+}
+
+.event-show-txt>h3 {
+  font-size: 20px;
+}
+
+/* Resultat slut */
 
 /* Jacob slut */
 
