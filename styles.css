@@ -91,6 +91,37 @@ a {
 
 /* Asger start */
 
+.mineBilletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  background-color: white;
+}
+
+.mineBilletter>h2 {
+  color: #00454E;
+  margin: 0 auto 0 auto;
+}
+
+.billetContainer {
+  margin: 35px auto;
+  height: auto;
+  width: 300px;
+}
+
+.billet {
+  border-style: solid;
+  border-color: #00796B;
+  background-color: #E4F1F0;
+}
+
+.ordrenummerContainer {
+  height: 100px;
+  border-top-style: solid;
+  border-top-color: #00796B;
+  border-top-width: 2px;
+}
 
 /* Asger slut */
 
@@ -134,7 +165,7 @@ p {
   border: 2px solid #00454E;
 }
 
-input:focus{
+input:focus {
   outline: none;
 }
 
@@ -145,14 +176,15 @@ input:focus{
   border: 2px solid #00454E;
 }
 
-.centertxt{
+.centertxt {
   display: flex;
   justify-content: center;
 }
 
 .marginstyrer {
-  margin:20px;
+  margin: 20px;
 }
+
 /* Jasmin slut */
 
 
