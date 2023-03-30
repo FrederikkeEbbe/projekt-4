@@ -141,12 +141,13 @@ a {
 #event-scroll>p {
   font-size: 18px;
   margin: auto;
-  margin-left: 64px;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 #event-scroll>h2{
-  text-align: center;
+  text-align: left;
+  color: #00454E;
 }
 
 .center {
@@ -188,7 +189,6 @@ a {
 
 .search-header>h2,p {
   color: #00454E;
-  padding-left: 33px;
 }
 
 .search-header>p {
@@ -209,7 +209,6 @@ a {
 
 .resultat-header {
   color: #00454E;
-  padding-left: 33px;
 }
 
 .search-event {
@@ -277,11 +276,25 @@ input:focus {
   text-align: left;
 }
 .marginstyrer {
-  margin: 20px;
+  margin: 35px;
+  margin-top: 0px;
+  color: #00454E;
 }
 
 .baggrund{
   background-color: #E4F1F0;
+}
+
+select{
+  width: 315px;
+  height: 50px;
+  border: 2px solid #00454E;
+}
+
+#search {
+  width: 315px;
+  height: 50px;
+  border: 2px solid #00454E;
 }
 /* Jasmin slut */
 
