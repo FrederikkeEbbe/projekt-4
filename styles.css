@@ -218,7 +218,7 @@ header {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
 }
 
 .event-kommende>h2,
@@ -246,6 +246,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 10px;
+  text-align: left;
 }
 
 .event-come-txt h3 {
