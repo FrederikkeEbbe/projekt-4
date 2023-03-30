@@ -150,6 +150,11 @@ input:focus{
   justify-content: center;
 }
 
+.lefttxt{
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
 .marginstyrer {
   margin:20px;
 }
@@ -179,7 +184,7 @@ header {
 /* Event kommende */
 .event-kommende {
   background-color: #E4F1F0;
-  padding: 35px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   text-align: center;
