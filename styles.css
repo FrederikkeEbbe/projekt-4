@@ -89,7 +89,33 @@ a {
 
 
 /* Jasmin start */
+.inputemne {
+  width: 350px;
+  height: 200px;
+  padding: 20px 15px;
+  padding-bottom: 155px;
+  border: 2px solid #00454E;
+}
 
+input:focus{
+  outline: none;
+}
+
+.inputandre {
+  width: 350px;
+  height: 50px;
+  padding: 20px 15px;
+  border: 2px solid #00454E;
+}
+
+.centertxt{
+  display: flex;
+  justify-content: center;
+}
+
+.marginstyrer {
+  margin:20px;
+}
 /* Jasmin slut */
 
 
