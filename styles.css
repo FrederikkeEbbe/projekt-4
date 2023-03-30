@@ -14,30 +14,37 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   font-family: proxima-nova, sans-serif;
   font-style: normal;
   font-weight: 100;
 }
+
 h1 {
   font-size: 48px;
   font-weight: bold;
 }
+
 h2 {
   font-size: 34px;
   font-weight: bold;
 }
+
 h3 {
   font-size: 24px;
   font-weight: bold;
 }
+
 p {
   font-size: 16.5px;
 }
+
 a {
   cursor: pointer;
   text-decoration: none;
 }
+
 .btn-prim {
   height: 55px;
   padding: 0px 45px;
@@ -49,19 +56,22 @@ a {
   border: none;
   border-radius: 5px;
 }
+
 .btn-prim:hover {
   border: solid #00454E;
   background-color: #E4F1F0;
   color: #00454E;
 
 }
-.btn-prim:active{
+
+.btn-prim:active {
   height: 50px;
   padding: 0px 40px;
 }
 
 .btn-gul {
   padding: 15px 45px;
+  margin: 35px 0 0;
   font-size: 15px;
   font-weight: bold;
   font-family: proxima-nova, sans-serif;
@@ -69,20 +79,47 @@ a {
   color: #00796B;
   border: none;
 }
+
 .btn-gul:hover {
   background-color: #00796B;
   color: #E4F1F0;
 }
+
 .btn-gul:active {
   opacity: 0.8;
 }
+
 /* Asger start */
+
 
 /* Asger slut */
 
 
 
 /* Jacob start */
+.event-scroll {
+  background-color: #E4F1F0;
+}
+
+.event-scroll>h2,
+p {
+  color: #00454E;
+}
+
+.event-scroll>p {
+  font-size: 18px;
+  margin: auto;
+  margin-left: 64px;
+}
+
+.event-scroll>h2 {
+  text-align: center;
+}
+
+.event-show {
+  background-color: #00454E;
+  width: 60%;
+}
 
 /* Jacob slut */
 
@@ -126,11 +163,13 @@ header {
   background-color: #E4F1F0;
   padding: 35px 20px;
 }
+
 .head-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .head-logo {
   width: 200px;
   height: 50px;
@@ -141,9 +180,15 @@ header {
 .event-kommende {
   background-color: #E4F1F0;
   padding: 35px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
 }
 
-.event-kommende > h2, h3, p {
+.event-kommende>h2,
+h3,
+p {
   color: #00454E;
 }
 
@@ -151,17 +196,18 @@ header {
   display: flex;
   justify-content: center;
   background-color: #00454E;
-  width: 280px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
+  margin: 35px auto 0px;
 }
 
-.event-come-pic{
-  width: 200px;
-  height: 60px;
+.event-come-pic {
+  width: 300px;
+  height: 100px;
   background-color: #F1C9CD;
 }
 
-.event-come-txt-con{
+.event-come-txt-con {
   display: flex;
   justify-content: space-between;
 }
@@ -169,14 +215,15 @@ header {
 .event-come-txt h3 {
   color: #E4F1F0;
 }
-  
-.event-come-txt-p{
+
+.event-come-txt-p {
   color: #E4F1F0;
 }
-  
+
 .event-come-date {
   color: #E4F1F0;
   font-size: 20px;
+
 }
 
 /* Social section*/
@@ -188,21 +235,26 @@ header {
   align-items: center;
   padding: 20px 0px;
 }
+
 .social-sec a {
-color: #E4F1F0;
+  color: #E4F1F0;
 }
-.follow-div{
+
+.follow-div {
   width: 250px;
   height: 400px;
   background-color: #E4F1F0;
   border-radius: 20px;
 }
+
 .social-sec * {
   margin-top: 10px;
 }
-.social-icon{
+
+.social-icon {
   margin-top: 40px;
 }
+
 .social-link {
   padding: 0px 5px;
 }
@@ -220,7 +272,10 @@ color: #E4F1F0;
   outline: none;
   border: none;
 }
-.hbmenu .bar, .hbmenu:after, .hbmenu:before {
+
+.hbmenu .bar,
+.hbmenu:after,
+.hbmenu:before {
   content: "";
   display: block;
   width: 100%;
@@ -229,44 +284,52 @@ color: #E4F1F0;
   margin: 4px 0px;
   transition: 0.4s;
 }
+
 /*aktivering af hb menu*/
 .hbmenu.aktivnu:before {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
+
 .hbmenu.aktivnu:after {
   transform: rotate(45deg) translate(-5px, -5px);
 }
-.hbmenu.aktivnu .bar{
+
+.hbmenu.aktivnu .bar {
   opacity: 0;
 }
+
 /* slide til side bar*/
 .mobil-nav {
-	position: fixed;
-	top: 0;
-	left: 100%;
-	width: 100%;
-	min-height: 100vh;
-	display: block;
-	z-index: 98;
-	background-color: #F1C9CD;
-	padding: 30px 10px 0px;
-	transition: 0.4s;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 98;
+  background-color: #F1C9CD;
+  padding: 30px 10px 0px;
+  transition: 0.4s;
 }
+
 .mobil-nav.aktivnu {
-	left: 0;
+  left: 0;
 }
+
 .mobil-nav a {
-	display: block;
-	max-width: 600px;
-	text-align: left;
-	background-color: #F1C9CD;
-	color: #00454E;
+  display: block;
+  max-width: 600px;
+  text-align: left;
+  background-color: #F1C9CD;
+  color: #00454E;
 }
+
 /*ændring af tekst i nav*/
 .bm-links a {
   font-size: 30px;
   font-weight: 700;
 }
+
 .bm-head a {
   font-size: 40px;
   font-weight: 700;
@@ -279,23 +342,28 @@ footer {
   background-color: #00454E;
   padding: 5px 35px 35px;
 }
+
 .foot-flex {
   display: flex;
   justify-content: space-between;
 }
+
 .foot-text {
   display: flex;
   flex-direction: column;
 }
+
 .foot-h {
   color: #FBE355;
   font-weight: bold;
   font-size: 20px;
   margin-top: 30px;
 }
+
 .foot-p {
   color: #E4F1F0;
 }
+
 .foot-img {
   width: 150px;
   height: 150px;
@@ -303,6 +371,7 @@ footer {
   align-self: center;
   margin-right: 20px;
 }
+
 .foot-banner p {
   display: flex;
   color: #E4F1F0;
@@ -310,4 +379,5 @@ footer {
   font-size: 10px;
   justify-content: center;
 }
+
 /* Frede slut */
