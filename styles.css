@@ -98,7 +98,28 @@ a {
 
 
 /* Jacob start */
+.event-scroll{
+  background-color: #E4F1F0;
+}
 
+.event-scroll>h2,p {
+  color: #00454E;
+}
+
+.event-scroll>p {
+  font-size: 18px;
+  margin: auto;
+  margin-left: 64px;
+}
+
+.event-scroll>h2{
+  text-align: center;
+}
+
+.event-show {
+  background-color: #00454E;
+  width: 60%;
+}
 /* Jacob slut */
 
 
