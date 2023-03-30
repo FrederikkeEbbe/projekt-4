@@ -97,12 +97,15 @@ a {
   flex-direction: column;
   justify-content: center;
   height: auto;
-  background-color: white;
 }
 
 .mineBilletter>h2 {
   color: #00454E;
   margin: 0 auto 0 auto;
+}
+
+.billet>h3 {
+  color: #00796B;
 }
 
 .billetContainer {
@@ -115,13 +118,38 @@ a {
   border-style: solid;
   border-color: #00796B;
   background-color: #E4F1F0;
+  padding: 20px 15px 5px 15px;
+}
+
+.billetBeskrivelse {
+  padding-bottom: 15px;
+}
+
+.billetInfo {
+  padding-bottom: 15px;
 }
 
 .ordrenummerContainer {
   height: 100px;
-  border-top-style: solid;
+  border-top-style: dashed;
   border-top-color: #00796B;
   border-top-width: 2px;
+  padding-top: 10px;
+}
+
+.billetType {
+  padding-bottom: 20px;
+}
+
+.stregkode {
+  font-family: 'Libre Barcode 128', cursive;
+  font-size: 54px;
+  text-align: center;
+}
+
+.stregkodeNr {
+  padding-left: 10px;
+  padding-bottom: 4px;
 }
 
 /* Asger slut */
@@ -130,12 +158,13 @@ a {
 
 /* Jacob start */
 /* Event show start*/
-#bcolor{
+#bcolor {
   background-color: #E4F1F0;
   padding-bottom: 4rem;
 }
 
-#event-scroll>h2,p {
+#event-scroll>h2,
+p {
   color: #00454E;
 }
 
@@ -146,7 +175,7 @@ a {
   text-align: left;
 }
 
-#event-scroll>h2{
+#event-scroll>h2 {
   text-align: left;
   color: #00454E;
 }
@@ -174,13 +203,15 @@ a {
   justify-content: space-between;
 }
 
-.event-show-txt>h3, h8 {
+.event-show-txt>h3,
+h8 {
   color: #ffffff;
 }
 
 .event-show-txt>h3 {
   font-size: 20px;
 }
+
 /*Event show slut*/
 /* Search start */
 .event-search {
@@ -188,7 +219,8 @@ a {
   padding-bottom: 4rem;
 }
 
-.search-header>h2,p {
+.search-header>h2,
+p {
   color: #00454E;
 }
 
@@ -218,7 +250,7 @@ a {
   width: 320px;
   height: 215px;
   margin-bottom: 2rem;
-  
+
 }
 
 .search-resultat-pic {
@@ -232,7 +264,8 @@ a {
   justify-content: space-between;
 }
 
-.search-resultat-txt>h3, h8 {
+.search-resultat-txt>h3,
+h8 {
   color: #ffffff;
 }
 
@@ -271,22 +304,23 @@ input:focus {
   justify-content: center;
 }
 
-.lefttxt{
+.lefttxt {
   display: flex;
   justify-content: left;
   text-align: left;
 }
+
 .marginstyrer {
   margin: 35px;
   margin-top: 0px;
   color: #00454E;
 }
 
-.baggrund{
+.baggrund {
   background-color: #E4F1F0;
 }
 
-select{
+select {
   width: 315px;
   height: 50px;
   border: 2px solid #00454E;
@@ -297,6 +331,7 @@ select{
   height: 50px;
   border: 2px solid #00454E;
 }
+
 /* Jasmin slut */
 
 
