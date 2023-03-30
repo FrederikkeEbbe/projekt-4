@@ -202,7 +202,7 @@ p {
   justify-content: center;
   background-color: #00454E;
   width: 300px;
-  height: 200px;
+  height: 190px;
   margin: 35px auto 0px;
 }
 
@@ -215,6 +215,7 @@ p {
 .event-come-txt-con {
   display: flex;
   justify-content: space-between;
+  margin: 10px;
 }
 
 .event-come-txt h3 {
@@ -228,7 +229,6 @@ p {
 .event-come-date {
   color: #E4F1F0;
   font-size: 20px;
-
 }
 
 /* Social section*/
