@@ -371,6 +371,10 @@ header {
   height: 50px;
 }
 
+.headloginhb{
+  display: flex;
+  align-items: center;
+}
 /* Event kommende */
 .event-kommende {
   background-color: #E4F1F0;
@@ -537,23 +541,18 @@ p {
 }
 
 /*loging funktion*/
-.btnlogin {
-  margin-top: 40px;
-  height: 55px;
-  padding: 0px 45px;
-  font-size: 15px;
-  font-weight: bold;
-  font-family: proxima-nova, sans-serif;
-  background-color: #00454E;
-  color: #E4F1F0;
-  border: none;
-  border-radius: 5px;
+
+.login-ikon {
+  color: #00454E;
+  transition: .5s;
+  margin-right: 12px;
 }
 
-.btnlogin:hover {
-  background-color: #00796B;
-  color: #E4F1F0;
+.login-ikon:hover {
+  color: #00796B
 }
+
+
 
 /*footer*/
 footer {
