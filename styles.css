@@ -518,7 +518,14 @@ p {
   color: #00454E;
 }
 
+.mobil-nav a:hover {
+  color: #00796B;
+}
+
 /*ændring af tekst i nav*/
+.bm-links {
+  margin-top: 30px;
+}
 .bm-links a {
   font-size: 30px;
   font-weight: 700;
