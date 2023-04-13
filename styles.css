@@ -162,17 +162,10 @@ a {
   display: flex;
   overflow-x: scroll;
   
-  max-width: 50rem;
-  margin: 0 auto;
+
 }
 
-#container p {
-  font-family: sans-serif;
-  
-  border-radius: 8px;
-  background: #ff6961;
-  color: white;
-  
+.event-show  {
   padding: 2rem 3rem;
   margin: 2rem 1rem;
 }
@@ -200,16 +193,11 @@ p {
   color: #00454E;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
-
 .event-show {
   background-color: #00454E;
   border-radius: 25px;
   padding: 20px;
-  width: 250px;
+  width: 400px;
   height: 320px;
 }
 
