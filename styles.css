@@ -166,8 +166,13 @@ a {
 }
 
 .event-show  {
-  padding: 2rem 3rem;
-  margin: 2rem 1rem;
+  padding: 2rem 1.5rem;
+  margin: 1rem 1.5rem;
+}
+
+
+@media only screen and (max-width: 400px) {
+
 }
 
 /* Event show start*/
@@ -204,6 +209,7 @@ p {
 .event-show-pic {
   background-color: #E4F1F0;
   height: 190px;
+  width: 170px;
 }
 
 .event-show-txtcenter {
@@ -218,6 +224,7 @@ h8 {
 
 .event-show-txt>h3 {
   font-size: 20px;
+  padding-top: 10px;
 }
 
 /*Event show slut*/
