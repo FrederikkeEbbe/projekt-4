@@ -378,6 +378,7 @@ select {
 header {
   background-color: #E4F1F0;
   padding: 35px 20px;
+  
 }
 
 .head-flex {
@@ -395,6 +396,28 @@ header {
   display: flex;
   align-items: center;
 }
+
+.headcontain{
+  position: relative;
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+.headbacktxt{
+  color: #00454E;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
 /* Event kommende */
 .event-kommende {
   background-color: #E4F1F0;
