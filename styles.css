@@ -560,6 +560,7 @@ p {
 }
 
 .loginwrap {
+  margin: 20px 0px;
   position: relative;
   width: 300px;
   height: 400px;
@@ -572,7 +573,7 @@ p {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: height .2s ease;
+  transition: transform .5s ease, height .2s ease;
   transform: scale(0);
 }
 
