@@ -37,7 +37,7 @@ ikonLuk.addEventListener('click', ()=> {
 //Asger
 
 //Jacob
-const element = document.querySelector("#container");
+const element = document.querySelector("#carousel");
 
 element.addEventListener('wheel', (event) => {
   event.preventDefault();
