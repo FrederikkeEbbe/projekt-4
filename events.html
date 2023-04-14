@@ -10,6 +10,8 @@
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/ebeed9b4da.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a6302b108c.js" crossorigin="anonymous"></script>
+    <script src="kategori.js" defer></script>
+    <script src="kalender.js" defer></script>
     <title>UCL EVENTS</title>
   </head>
 
@@ -141,7 +143,6 @@
                 </div>
               </div>
           </div>
-        
         </div>
    </section>
     <section class="event-search">
@@ -165,14 +166,7 @@
         </div>
         <br>
         <div>
-          <select>
-            <option value="" disabled selected>Kategori</option>
-            <option> Sport</option>
-            <option> Fest</option>
-            <option> Foredrag</option>
-            <option> Karriere</option>
-            <option> Hobby</option>
-            <option> Skills</option>
+          <select id="kategoriVælger">
           </select>
         </div>
       </div>
@@ -182,7 +176,6 @@
         <div class="resultat-header">
           <h2>Resultat</h2>
         </div>
-        <div class="center">
           <div class="search-event">
               <div class="search-resultat-pic"></div>
                 <div class="search-resultat-txtcenter">
@@ -192,8 +185,6 @@
                   </div>
                 </div>
           </div>
-        </div>
-        <div class="center">
           <div class="search-event">
               <div class="search-resultat-pic"></div>
                 <div class="search-resultat-txtcenter">
@@ -202,9 +193,7 @@
                     <h8 class="search-resultat-txt">Niels Bohrs Allé 1 30/03/2023</h8>
                   </div>
                 </div>
-          </div>
         </div>
-        <div class="center">
           <div class="search-event">
               <div class="search-resultat-pic"></div>
                 <div class="search-resultat-txtcenter">
@@ -215,12 +204,33 @@
                 </div>
            </div>
           </div>
-        </div>
-        <div class="center">
+        <div class="knap-center">
           <button class="btn-gul">Se flere</button>
         </div>
     </section>
-
+    <div class="kalenderbaggrund">
+      <div class="helekalender">
+        <time>
+          <p class="idag"></p>
+            <div class="pil">
+              <span id="forrige" class="fa-solid fa-chevron-left fa-2xs"></span>
+              <span id="næste" class="fa-solid fa-chevron-right fa-2xs"></span>
+            </div>
+        </time>
+          <div class="kalender">
+            <ul class="uger">
+                <li>Man</li>
+                <li>Tir</li>
+                <li>Ons</li>
+                <li>Tor</li>
+                <li>Fre</li>
+                <li>Lør</li>
+                <li>Søn</li>
+            </ul>
+            <ul class="dage"></ul>
+          </div>
+        </div>
+      </div>
 
     <footer>
         <div class="foot-flex">
