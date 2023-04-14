@@ -353,14 +353,13 @@ select {
   width: 60px;
   height: 60px;
   background: url("image/PilHvid.png") no-repeat center #00454E;
-  border: none;
+  border: #E4F1F0 solid 1px;
 }
 
 .top:hover {
   background: url("image/PilBlå.png") no-repeat center #ffffff;
   border: none;
 }
-
 
 /*Baggrund bag kalender*/
 .kalenderbaggrund {
