@@ -361,6 +361,117 @@ select {
   border: none;
 }
 
+
+/*Baggrund bag kalender*/
+.kalenderbaggrund {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #00454E;
+}
+
+/*Opbyggelse af kalender*/
+.helekalender {
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+}
+.helekalender time{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 20px;
+  justify-content: space-between;
+}
+
+/*Måneds overskrift*/
+time .idag{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*pil design*/
+time .pil span{
+  height: 38px;
+  width: 38px;
+  color: #878787;
+  font-size: 1.9rem;
+  margin: 0 1px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+time .pil span:hover{
+  background: #f2f2f2;   
+}
+time .pil span:last-child{
+  margin-right: -10px;
+}
+
+/*Opbyggelse af kalender*/
+.kalender {
+  padding: 20px;
+}
+.kalender ul{
+display: flex;
+list-style: none;
+flex-wrap: wrap;
+text-align: center
+}
+.kalender .dage{
+  margin-bottom: 20px;
+}
+.kalender .uger li{
+  font-weight: 500;
+}
+.kalender ul li{
+  position: relative;
+  width: calc(100% / 7);
+}
+.kalender .dage li{
+  cursor: pointer;
+  margin-top: 30px;
+  z-index: 1;
+}
+.dage li.inaktiv{
+  color: #aaa;
+}
+.dage li.aktiv{
+  color: #fff;
+}
+
+/*Pågældende dag*/
+.kalender .dage li::before{
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.dage li:hover::before{
+  background: #f2f2f2;
+}
+.dage li.aktiv::before{
+  background: #00454E;
+}
+
+/*I dag*/
+#nu{
+  border-radius: 50%;
+  color: black;
+  content: "";
+}
+#nu::before{
+  height: 40px;
+  width: 40px;
+  background-color: #F1C9CD;
+}
+
 /* Jasmin slut */
 
 
