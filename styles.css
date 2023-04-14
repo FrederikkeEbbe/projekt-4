@@ -565,6 +565,9 @@ header {
   color: #00454E;
 }
 
+.event-kommende {
+  background-color: #E4F1F0;
+}
 .kom-event-item-contain{
   position: relative;
   margin: 24px;
