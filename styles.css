@@ -569,11 +569,15 @@ header {
   position: relative;
   margin: 24px;
   width: 300px;
-  height: 500px;
+  height: 325px;
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.kom-event-item-contain:hover {
+  height: 570px;
 }
 
 .kom-event-img-contain, .kom-event-body-contain {
@@ -618,7 +622,6 @@ position: relative;
 .kom-event-title, .kom-event-price {
 font-weight: bold;
 font-size: 25px;
-margin: 5px;
 }
 
 .kom-evnt-pinfo {
@@ -628,14 +631,14 @@ margin-bottom: 6px;
 
 .kom-event-seperator {
   width: 20%;
-  height: 3px;
+  height: 1px;
   background-color: #00454E;
   margin-bottom: 10px;
 }
 
 .kom-event-mere-info {
   width: 100%;
-  border-top: 1px solid #00454E;
+  border-top: 0.5px solid #00454E;
   margin-top: 8px;
   padding: 28px;
   padding-bottom: 0;
@@ -652,6 +655,7 @@ margin-bottom: 6px;
 .kom-event-action {
   color: #fff;
   border: 3px solid #fff;
+  border-radius: 6px;
   background-color: transparent;
   position: absolute;
   top: -100px;
@@ -661,6 +665,7 @@ margin-bottom: 6px;
   outline: none;
   padding: 13px;
   text-transform: uppercase;
+  font-weight: bold;
   transition: background-color 0.4s, top 0.4s;
 }
 
@@ -669,7 +674,11 @@ margin-bottom: 6px;
 }
 
 .kom-event-pinfo.description {
-  margin-top: 10px;
+  margin: 10px;
+}
+
+#kom-obs {
+  font-size: 12px;
 }
 
 
