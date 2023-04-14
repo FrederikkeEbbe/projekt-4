@@ -472,8 +472,8 @@ text-align: center
   background-color: #F1C9CD;
 }
 
-/*
-#myAnimation {
+
+#animationbillet {
   position: relative;
   z-index: -1;
   width: 300px;
@@ -491,7 +491,7 @@ text-align: center
   z-index: 5;
 }
 
-button {
+button1 {
   background: none;
   border: none;
   width: 300px;
@@ -500,7 +500,7 @@ button {
   margin-top: -135px;
   margin-left: 45px;
 }
-/*
+
 /* Jasmin slut */
 
 

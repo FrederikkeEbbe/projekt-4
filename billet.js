@@ -1,6 +1,6 @@
 var id = null;
-function myMove() {
-  var elem = document.getElementById("myAnimation");   
+function flyv() {
+  var elem = document.getElementById("animationbillet");   
   var pos = -35;
   clearInterval(id);
   id = setInterval(frame, 5);
