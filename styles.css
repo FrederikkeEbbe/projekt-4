@@ -574,6 +574,8 @@ header {
   background-color: #fff;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  border-radius: 6px;
+  border: solid 0px;
 }
 
 .kom-event-item-contain:hover {
