@@ -203,6 +203,7 @@ p {
   background-color: #E4F1F0;
   height: 200px;
   width: 200px;
+  object-fit: cover;
 }
 
 .event-show-txtcenter {
