@@ -359,7 +359,7 @@ select {
 
 .top:hover {
   background: url("image/PilBlå.png") no-repeat center #ffffff;
-  border: none;
+  border: #00454E solid 1px;
 }
 
 /*Baggrund bag kalender*/
