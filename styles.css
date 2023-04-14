@@ -530,7 +530,7 @@ header {
   flex-wrap: wrap;
 }
 
-.event-kommende{
+.event-kommende p, h2{
   color: #00454E;
 }
 
@@ -538,10 +538,10 @@ header {
   position: relative;
   margin: 24px;
   width: 300px;
-  height: 570px;
+  height: 500px;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 0 0 30px 5px rgb(0, 0, 0, 0.15);
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
@@ -552,6 +552,95 @@ header {
   width: 100%;
   height: 100%;
 }
+
+.kom-event-img-contain img{
+  width: 100%;
+}
+
+.kom-event-body-contain{
+position: relative;
+}
+
+.kom-event-overlay {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 50, 70, 0.6);
+  opacity: 0;
+  transition: height linear 0.4s, opacity linear 0.2s;
+}
+
+.kom-event-item-contain:hover .kom-event-overlay {
+  opacity: 1;
+  height: 150px;
+}
+
+.kom-event-info {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.kom-event-title, .kom-event-price {
+font-weight: bold;
+font-size: 25px;
+margin: 5px;
+}
+
+.kom-evnt-pinfo {
+letter-spacing: 0.5px;
+margin-bottom: 6px;
+}
+
+.kom-event-seperator {
+  width: 20%;
+  height: 3px;
+  background-color: #00454E;
+  margin-bottom: 10px;
+}
+
+.kom-event-mere-info {
+  width: 100%;
+  border-top: 1px solid #00454E;
+  margin-top: 8px;
+  padding: 28px;
+  padding-bottom: 0;
+}
+
+.kom-event-mere-info .kom-event-pinfo{
+  margin-bottom: 20px;
+}
+
+.kom-event-pinfo span{
+  font-weight: bold;
+}
+
+.kom-event-action {
+  color: #fff;
+  border: 3px solid #fff;
+  background-color: transparent;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  outline: none;
+  padding: 13px;
+  text-transform: uppercase;
+  transition: background-color 0.4s, top 0.4s;
+}
+
+.kom-event-item-contain:hover .kom-event-action {
+  top: 50px;
+}
+
+.kom-event-pinfo.description {
+  margin-top: 10px;
+}
+
 
 /* Event kommende sprint 2
 .event-kommende {
