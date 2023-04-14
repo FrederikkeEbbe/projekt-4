@@ -117,6 +117,7 @@ a {
 .billet {
   border-style: solid;
   border-color: #00796B;
+  border-bottom: dashed #00796B;
   background-color: #E4F1F0;
   padding: 20px 15px 5px 15px;
 }
@@ -471,6 +472,33 @@ text-align: center
   background-color: #F1C9CD;
 }
 
+#myAnimation {
+  position: relative;
+  z-index: -1;
+  width: 300px;
+  margin: auto;
+  border-style: solid;
+  border-color: #00796B;
+  border-top: dashed #00796B;
+  background-color: #E4F1F0;
+  padding: 20px 15px 5px 15px;
+  width: 300px;
+  top: -40px;
+}
+
+#billetfooter {
+  z-index: 5;
+}
+
+button {
+  background: none;
+  border: none;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  margin-top: -135px;
+  margin-left: 45px;
+}
 /* Jasmin slut */
 
 
