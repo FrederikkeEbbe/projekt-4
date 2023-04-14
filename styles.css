@@ -157,7 +157,7 @@ a {
 
 
 /* Jacob start */
-
+/* Carousel start*/
 #carousel{
   display: flex;
   overflow-x: scroll;
@@ -166,9 +166,14 @@ a {
 }
 
 .event-show  {
-  padding: 2rem 1.5rem;
-  margin: 1rem 1.5rem;
+  background-color: #00454E;
+  border-radius: 25px;
+  padding: 30px;
+  margin: 1rem 1.7rem;
+  width: 400px;
+  height: 330px;
 }
+/* Carousel slut*/
 
 /* Event show start*/
 #bcolor {
@@ -193,18 +198,10 @@ p {
   color: #00454E;
 }
 
-.event-show {
-  background-color: #00454E;
-  border-radius: 25px;
-  padding: 20px;
-  width: 400px;
-  height: 330px;
-}
-
 .event-show-pic {
   background-color: #E4F1F0;
-  height: 190px;
-  width: 170px;
+  height: 200px;
+  width: 200px;
 }
 
 .event-show-txtcenter {
@@ -281,6 +278,11 @@ h8 {
 
 .event-show-txt>h3 {
   font-size: 20px;
+}
+
+.knap-center{
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Resultat slut */
