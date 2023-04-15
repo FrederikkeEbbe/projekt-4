@@ -474,7 +474,21 @@ text-align: center
 }
 
 
-#animationbillet {
+#animationbillet1 {
+  position: relative;
+  z-index: -1;
+  width: 300px;
+  margin: auto;
+  border-style: solid;
+  border-color: #00796B;
+  border-top: dashed #00796B;
+  background-color: #E4F1F0;
+  padding: 20px 15px 5px 15px;
+  width: 300px;
+  top: -40px;
+}
+
+#animationbillet2 {
   position: relative;
   z-index: -1;
   width: 300px;
@@ -499,7 +513,6 @@ button1 {
   height: 100px;
   display: flex;
   margin-top: -135px;
-  margin-left: 45px;
 }
 
 #navbillede {
@@ -518,6 +531,12 @@ button1 {
   grid-template-columns: auto auto auto;
   justify-content: center;
   gap: 80px;
+}
+
+.billet-flere {
+  padding: 20px;
+  width: 400px;
+  height: auto;
 }
 
 /* Jasmin slut */
