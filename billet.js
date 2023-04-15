@@ -1,15 +1,15 @@
-var id = null;
+var interval = null;
 function flyv() {
-  var elem = document.getElementById("animationbillet");   
-  var pos = -35;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 300) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + 'px'; 
+    var elem = document.getElementById("animationbillet");   
+    var position = -35;
+    clearInterval(interval);
+    interval = setInterval(frame, 5);
+    function frame() {
+            if (position == 300) {
+                clearInterval(interval);         
+            } else {
+                position++; 
+                elem.style.top = position + 'px'; 
+            }
     }
-  }
 }
