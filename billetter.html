@@ -15,20 +15,23 @@
   </head>
 
   <body>
-    <header class="headerHvid">
+    <header>
       <div class="head-flex">
         <!-- Logo - top -->
         <div class="head-logo">
           <a href="index.html"><img src="image/UCL_horisontal_logo.png" alt="UCL logo"></a>
         </div>
         <!-- Logo - top  Slut-->
+       
         <!--BM menu - Frederikke-->
-        <button class="hbmenu">
+        <div class="headloginhb">
+        <span class="login-ikon"><i id="login-ikon" class="fa-solid fa-user fa-lg"></i></span>
+        <div class="hbmenu">
         <div class="bar"></div>
-        </button> 
+        </div> 
         <nav class="mobil-nav">
           <div class="bm-head">
-            <a href="index.html">Startside</a>
+            <a href="index.html">Forside</a>
           </div>
           <div class="bm-links">
             <a href="events.html">Events</a>
@@ -47,6 +50,78 @@
           </div>
         </nav>
       </div>
+      </div>
+      <div class="headcontain">
+        <div class="headbacktxt">
+          <h1>Mine billetter</h1>
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem halløj tekst tihi</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, assumenda!</p>
+          <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam at laborum dolorem suscipit tenetur beatae alias veniam.</p>
+        </div>
+      <!-- login og registrer-->
+      <div class="loginwrap">
+        <!--login-->
+        <span class="ikon-luk"><i class="fa-sharp fa-solid fa-xmark"></i></span>
+        <div class="form-box-login login">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="ikon-log"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="ikon-log"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required>
+              <label>Kode</label>
+            </div>
+            <div class="husk-glem">
+              <label for="">
+                <input type="checkbox">
+              Husk mig</label>
+              <a href="#">Glemt kode?</a>
+            </div>
+            <button type="submit" class="btnlogin">Login</button>
+            <div class="login-register">
+              <p class="txt-register">Har du ikke en bruger? <a class="register-link" href="#"> Opret bruger</a></p>
+            </div>
+          </form>
+        </div>
+        <!--registrer-->
+        <div class="form-box-login register">
+          <h2>Registrer</h2>
+          <form action="#">
+            <div class="input-box">
+              <span class="ikon-log"><i class="fa-solid fa-user"></i></span>
+              <input type="text" required>
+              <label>Brugernavn</label>
+            </div>
+            <div class="input-box">
+              <span class="ikon-log"><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="ikon-log"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" required>
+              <label>Kode</label>
+            </div>
+            <div class="husk-glem">
+              <label for="">
+                <input type="checkbox">
+              Jeg accepterer betingelserne</label>
+            </div>
+            <button type="submit" class="btnlogin">Opret bruger</button>
+            <div class="login-register">
+              <p class="txt-register">Har du allerede en bruger? <a class="login-link" href="#">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+      
       <!--BM menu - Frederikke-->
     </header>
 
