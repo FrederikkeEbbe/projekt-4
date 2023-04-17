@@ -293,26 +293,13 @@ h8 {
 
 /* Resultat slut */
 
-/* MQ start*/
-
-@media only screen and (min-width: 375px) {
-  .marginstyrer{
-    margin: 20px;
-  }
+.marginstyrer{
+  position: relative;
+  background: none;
+  justify-content: center;
 }
-
-@media only screen and (max-width: 374px) {
-  .marginstyrer{
-    margin: 35px;
-  }
-}
-
 /* Eventuelt se nærmere på styling gennem media query. I dette tilfælde i forhold til .marginstyrer
 Følg link - https://gist.github.com/OliverJAsh/1ebecee004e1bbc816e0b65086c7abee */
-
-
-/* MQ slut*/
-
 
 /* Jacob slut */
 
