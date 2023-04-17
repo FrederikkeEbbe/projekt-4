@@ -376,12 +376,17 @@ select {
 }
 
 /*Baggrund bag kalender*/
-.kalenderbaggrund {
+.kalenderbaggrund1 {
+  padding-left: 35px;
+  background-color: #00454E;
+  padding-top: 50px;
+}
+
+.kalenderbaggrund2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #00454E;
+  min-height: 600px;
 }
 
 /*Opbyggelse af kalender*/
@@ -549,6 +554,10 @@ button1 {
   padding: 20px;
   width: 400px;
   height: auto;
+}
+
+#colorwhite {
+  color: #FFFFFF;
 }
 
 /* Jasmin slut */
