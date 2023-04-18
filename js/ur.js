@@ -32,3 +32,5 @@ var x = setInterval(function(){
     document.getElementById("sekunder").innerHTML = "00";
   }
 },1000);
+
+//mangler en if + if elese, array og loop.
