@@ -1136,7 +1136,7 @@ footer {
 /*Afstemning om events*/
 .ur-contain{
   width: 100vw;
-  height: 80vh;
+  height: 70vh;
   background-image: url(image/party_back.jpg);
   background-position: center;
   background-size: cover;
@@ -1163,12 +1163,13 @@ footer {
 }
 
 .ur-content button {
-  background: transparent;
-  border: 2px solid #00454E;
-  padding: 15px;
-  border-radius: 6px;
+  background: #00454E ;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 8px;
   font-size: 15px;
-  color: #00454E;
+  font-weight: bold;
+  color: #E4F1F0;
   display: flex;
   align-items: center;
   margin-top: 30px;

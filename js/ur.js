@@ -23,6 +23,7 @@ var x = setInterval(function(){
   document.getElementById("minutter").innerHTML = minutter;
   document.getElementById("sekunder").innerHTML = sekunder;
 
+  // if, der laver count down om, når datoen er nået.
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("dage").innerHTML = "00";
