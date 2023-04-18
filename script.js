@@ -39,18 +39,9 @@ ikonLuk.addEventListener('click', ()=> {
 //Asger
 
 //Jacob
-const element = document.querySelector("#carousel");
-
-element.addEventListener('wheel', (event) => {
-  event.preventDefault();
-
-  element.scrollBy({
-    left: event.deltaY < 0 ? -30 : 30,
-    
-  });
-});
 
 //Jasmin
 function totop() {
 	window.scrollTo({top: 0, behavior: 'smooth'});
   }
+  
