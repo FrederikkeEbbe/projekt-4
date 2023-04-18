@@ -172,7 +172,7 @@ a {
   padding: 30px;
   margin: 1rem 1.7rem;
   width: 400px;
-  height: 330px;
+  height: 370px;
 }
 /* Carousel slut*/
 
@@ -191,6 +191,7 @@ a {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .event-show-txtcenter {
