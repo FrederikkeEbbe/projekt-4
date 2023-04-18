@@ -799,6 +799,10 @@ p {
   padding: 20px 0px;
 }
 
+.social-sec h2 {
+  color: #FBE355;
+}
+
 .social-sec a {
   color: #E4F1F0;
 }
@@ -1135,6 +1139,10 @@ footer {
   font-size: 10px;
   justify-content: center;
 }
+
+/*Afstemning om events*/
+
+
 
 /* Frede slut */
 
