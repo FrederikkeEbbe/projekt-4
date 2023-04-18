@@ -1133,7 +1133,10 @@ footer {
 }
 
 /*Afstemning om events*/
-
+.ur-contain{
+  width: 250px;
+  height: 100px;
+}
 
 
 /* Frede slut */
