@@ -1134,9 +1134,58 @@ footer {
 
 /*Afstemning om events*/
 .ur-contain{
-  width: 250px;
-  height: 100px;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(image/party_back.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
 }
+
+.ur-content {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  background: transparent;
+  backdrop-filter: blur(3px);
+  border-radius: 6px;
+  color: #00454E;
+}
+
+.ur-content p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ur-content h2 span {
+  text-transform: uppercase;
+}
+
+.ur-content button {
+  background: transparent;
+  border: 2px solid #00454E;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #00454E;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.ur-launch-time{
+  display: flex;
+}
+
+.ur-launch-time div{
+  flex-basis: 100px;
+}
+
+.ur-launch-time div p {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
 
 
 /* Frede slut */
