@@ -1,4 +1,4 @@
- // create an array of event data
+ // Array med det data som skal randomize
   const events = [
     {
       imgSrc: 'image/event-boardgame.jpg',
@@ -37,7 +37,7 @@
     }
   ];
 
-  // create a function to randomize the events
+  // Funktion som randomizer rækkefølgen
   function randomizeEvents() {
     let randomizedEvents = [];
     while (randomizedEvents.length < events.length) {
@@ -49,13 +49,13 @@
     return randomizedEvents;
   }
 
-  // call the function and get the randomized events
+  // Kalder funktionen
   const randomizedEvents = randomizeEvents();
 
   // create a variable to store the HTML for the carousel
   let carouselHTML = '';
 
-  // loop through the randomized events and add them to the carouselHTML variable
+  // Looper igennem de randomized elementer i eventet tilføjer det til carouselHTML variablen
   for (let i = 0; i < randomizedEvents.length; i++) {
     const event = randomizedEvents[i];
     carouselHTML += `
@@ -71,7 +71,7 @@
     `;
   }
 
-  // display the carousel in the HTML
+  // Indsætter det i events.html
   document.getElementById('carousel').innerHTML = carouselHTML;
 
 const element = document.querySelector("#carousel");
