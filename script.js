@@ -43,5 +43,19 @@ ikonLuk.addEventListener('click', ()=> {
 //Jasmin
 function totop() {
 	window.scrollTo({top: 0, behavior: 'smooth'});
+<<<<<<< Updated upstream
   }
   
+=======
+}
+
+window.onscroll = function() {tiltop()};
+
+function tiltop() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop < 50) {
+    document.getElementById("tops").className = "forsvind";
+  } else {
+    document.getElementById("tops").className = "top";
+  }
+}
+>>>>>>> Stashed changes
