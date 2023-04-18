@@ -43,10 +43,6 @@ ikonLuk.addEventListener('click', ()=> {
 //Jasmin
 function totop() {
 	window.scrollTo({top: 0, behavior: 'smooth'});
-<<<<<<< Updated upstream
-  }
-  
-=======
 }
 
 window.onscroll = function() {tiltop()};
@@ -58,4 +54,3 @@ function tiltop() {
     document.getElementById("tops").className = "top";
   }
 }
->>>>>>> Stashed changes
