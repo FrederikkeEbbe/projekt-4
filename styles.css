@@ -182,21 +182,8 @@ a {
   padding-bottom: 4rem;
 }
 
-#event-scroll>h2,
-p {
-  color: #00454E;
-}
-
-#event-scroll>p {
-  font-size: 18px;
-  margin: auto;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-#event-scroll>h2 {
-  text-align: left;
-  color: #00454E;
+#event-scroll {
+  padding: 35px 20px;
 }
 
 .event-show-pic {
