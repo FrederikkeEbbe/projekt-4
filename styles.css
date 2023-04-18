@@ -365,15 +365,15 @@ select {
 
 /*Baggrund bag kalender*/
 .kalenderbaggrund1 {
-  padding-left: 35px;
   background-color: #00454E;
   padding-top: 50px;
 }
 
 .kalenderbaggrund2 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 600px;
+  min-height: 550px;
 }
 
 /*Opbyggelse af kalender*/
@@ -545,6 +545,7 @@ button1 {
 
 #colorwhite {
   color: #FFFFFF;
+  padding-left: 35px;
 }
 
 .forsvind {
