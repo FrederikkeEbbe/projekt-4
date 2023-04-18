@@ -23,4 +23,11 @@ var x = setInterval(function(){
   document.getElementById("minutter").innerHTML = minutter;
   document.getElementById("sekunder").innerHTML = sekunder;
 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("dage").innerHTML = "00";
+    document.getElementById("timer").innerHTML = "00";
+    document.getElementById("minutter").innerHTML = "00";
+    document.getElementById("sekunder").innerHTML = "00";
+  }
 },1000);
