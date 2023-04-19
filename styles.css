@@ -158,6 +158,22 @@ a {
 
 
 /* Jacob start */
+
+/* Om os tekst start*/
+
+.ostxt {
+  color: #00454E;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:0px 20px;
+  padding-bottom: 20px;
+}
+
+/* Om os tekst slut*/
+
 /* Carousel start*/
 #carousel{
   display: flex;
