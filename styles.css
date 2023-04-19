@@ -1160,6 +1160,7 @@ footer {
 }
 
 .ur-content {
+  padding: 30px;
   top: 50%;
   position: relative;
   transform: translateY(-50%);
@@ -1181,14 +1182,18 @@ footer {
 .ur-content button {
   background: #00454E ;
   border: none;
-  padding: 20px 30px;
+  padding: 20px 40px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: bold;
   color: #E4F1F0;
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+
+.ur-content button:hover {
+  background-color: #00796B;
 }
 
 .ur-launch-time{

@@ -33,4 +33,29 @@ var x = setInterval(function(){
   }
 },1000);
 
-//mangler en if + if elese, array og loop.
+//array med beskeder
+let hilsen = ["STØRSTE", "VILDESTE", "SJOVESTE"]
+
+//variabler
+let datoHilsen, tidHilsen, hilsenText;
+
+//sætter værdi på variablerne
+datoHilsen = new Date();
+tidHilsen = datoHilsen.getHours();
+hilsenText = document.getElementById("urSpan");
+
+//if statement -> hvis klokken er under eller lig med 10 skriv "STØRSTE"
+//hvis klokken er over 10 og under eller lig med 17 så skriv "VILDESTE"
+//hvis klokken er under 17 og under eller lig med 24 så skriv "SJOVESTE"
+if(tidHilsen <= 10) {
+    hilsenText.innerHTML = hilsen[0];
+    console.log(hilsen[0]);
+}
+else if (tidHilsen > 10 && tidHilsen <= 17) {
+    hilsenText.innerHTML = hilsen[1];
+    console.log(hilsen[1]);
+}
+else if (tidHilsen > 17 && tidHilsen <= 24) {
+    hilsenText.innerHTML = hilsen[2];
+    console.log(hilsen[2]);
+}
