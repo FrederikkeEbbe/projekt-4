@@ -1237,3 +1237,10 @@ footer {
 .headerHvid {
   background-color: white;
 }
+
+@media (min-width: 1000px) {
+  #carousel {
+    display: flex;
+    justify-content: center;
+  }
+}
