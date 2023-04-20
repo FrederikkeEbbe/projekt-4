@@ -82,7 +82,7 @@
               <label>Kode</label>
             </div>
             <div class="husk-glem">
-              <label for="">
+              <label for="#">
                 <input type="checkbox">
               Husk mig</label>
               <a href="#">Glemt kode?</a>
@@ -113,7 +113,7 @@
               <label>Kode</label>
             </div>
             <div class="husk-glem">
-              <label for="">
+              <label for="#">
                 <input type="checkbox">
               Jeg accepterer betingelserne</label>
             </div>
@@ -128,9 +128,6 @@
       
       <!--BM menu - Frederikke-->
     </header>
-    <section>
-      
-    </section>
     <section id="bcolor">
     <div id="event-scroll">
         <h2>Forslåede events</h2>
@@ -142,8 +139,8 @@
                 <div class="event-show-txtcenter">
                   <div class="event-show-txt">
                     <h3>Brætsspilcafe</h3>
-                    <h8 class="event-show-txt">Seebladsgade 1<br>
-                    23/04 2023</h8>
+                    <p class="event-show-txt">Seebladsgade 1<br>
+                    23/04 2023</p>
                   </div>
                 </div>
           </div>
@@ -152,8 +149,8 @@
               <div class="event-show-txtcenter">
                 <div class="event-show-txt">
                   <h3>Fredagsbar</h3>
-                  <h8 class="event-show-txt">Seebladsgade 1<br>
-                  14/04 2023</h8>
+                  <p class="event-show-txt">Seebladsgade 1<br>
+                  14/04 2023</p>
                 </div>
               </div>
           </div>
@@ -162,8 +159,8 @@
               <div class="event-show-txtcenter">
                 <div class="event-show-txt">
                   <h3>Karrieredag</h3>
-                  <h8 class="event-show-txt">Seebladsgade 1<br>
-                  30/04 2023</h8>
+                  <p class="event-show-txt">Seebladsgade 1<br>
+                  30/04 2023</p>
                 </div>
               </div>
           </div>
@@ -172,8 +169,8 @@
               <div class="event-show-txtcenter">
                 <div class="event-show-txt">
                   <h3>Semesterfest</h3>
-                  <h8 class="event-show-txt">Seebladsgade 1<br>
-                  13/05 2023</h8>
+                  <p class="event-show-txt">Seebladsgade 1<br>
+                  13/05 2023</p>
                 </div>
               </div>
           </div>
@@ -182,8 +179,8 @@
               <div class="event-show-txtcenter">
                 <div class="event-show-txt">
                   <h3>VM på UCL</h3>
-                  <h8 class="event-show-txt">Seebladsgade 1<br>
-                  26/05 2023</h8>
+                  <p class="event-show-txt">Seebladsgade 1<br>
+                  26/05 2023</p>
                 </div>
               </div>
           </div>
@@ -320,6 +317,7 @@
               </div>
         <div class="knap-center">
           <button class="btn-gul">Se flere</button>
+        </div>
     </section>
     <div class="kalenderbaggrund1">
       <h2 id=colorwhite>Kalender</h2>
@@ -327,7 +325,7 @@
       <div class="kalenderbaggrund2" id="kalenderevent">
         <div class="helekalender">
           <time>
-            <p class="idag"></p>
+            <div class="idag"></div>
             <div class="pil">
               <span id="forrige" class="fa-solid fa-chevron-left fa-2xs"></span>
               <span id="næste" class="fa-solid fa-chevron-right fa-2xs"></span>
@@ -349,17 +347,17 @@
     </div>
     </div>
     <footer>
-        <div class="foot-flex">
+      <div class="foot-flex">
           <div class="foot-text-contain">
             <div class="foot-text">
               <a class="foot-h" href="events.html">Events</a>
-              <a class="foot-p" href="events.html #søgevent">Find event</a>
+              <a class="foot-p" href="events.html" id="søgevent">Find event</a>
               <a class="foot-p" href="billetter.html">Mine billetter</a>
-              <a class="foot-p" href="events.html #kalenderevent">Kalender</a>
+              <a class="foot-p" href="events.html" id="kalenderevent">Kalender</a>
             </div>
             <div class="foot-text">
               <a class="foot-h" href="foreninger.html">Foreninger</a>
-              <a class="foot-p" href="foreninger.html #søgforeninger">Find forening</a>
+              <a class="foot-p" href="foreninger.html" id="#søgforeninger">Find forening</a>
               <a class="foot-p" href="foreninger.html">Tilmeld dig en forening</a>
             </div>
             <div class="foot-text">
@@ -370,11 +368,10 @@
           </div>
             <img class="foot-img" src="image/footer.svg" alt="billede footer">
           </div>
-        </div>
         <div class="foot-banner">
           <p>copyright UCL / uclevents.dk</p>
         </div>
-      </footer>
+    </footer>
       <!-- Frederikke laver footer-->
       <button onclick="totop()" id="tops" class="top forsvind"></button>
     </body>
