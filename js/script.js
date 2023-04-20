@@ -1,5 +1,5 @@
 // Frede 
-// Burgermenu EMAIL HOPPER NED IGEN HVOR TEKSTEN BURDE VÆRE, MEN DET GØR KODEN IKKE
+// Burgermenu 
 window.onload = function () {
 	const menu_btn = document.querySelector('.hbmenu');
 	const mobil_menu = document.querySelector('.mobil-nav');

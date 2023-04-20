@@ -1,5 +1,5 @@
 // Frederikke count down
-//tilføj en var med en dato. Den gemmer tid og dato, når nedtællingen ender
+//tilføj en let med en dato. Den gemmer tid og dato, når nedtællingen ender
 let countDownDato = new Date("Sep 15, 2023 00:00:00").getTime();
 
 //Tilføjer en funktion. Den gentager sig ved 1000 milisekunder. Det vil sige et sekundt
@@ -46,7 +46,7 @@ hilsenText = document.getElementById("urSpan");
 
 //if statement -> hvis klokken er under eller lig med 10 skriv "STØRSTE"
 //hvis klokken er over 10 og under eller lig med 17 så skriv "VILDESTE"
-//hvis klokken er under 17 og under eller lig med 24 så skriv "SJOVESTE"
+//hvis klokken er onder 17 og under eller lig med 24 så skriv "SJOVESTE"
 if(tidHilsen <= 10) {
     hilsenText.innerHTML = hilsen[0];
     console.log(hilsen[0]);
