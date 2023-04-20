@@ -97,6 +97,7 @@ a {
   flex-direction: column;
   justify-content: center;
   height: auto;
+  padding-top: 20px;
 }
 
 .mineBilletter>h2 {
@@ -109,7 +110,7 @@ a {
 }
 
 .billetContainer {
-  margin: 35px auto;
+  margin: 20px auto;
   height: auto;
   width: 300px;
 }
@@ -168,21 +169,21 @@ a {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding:0px 20px;
+  padding: 0px 20px;
   padding-bottom: 20px;
 }
 
 /* Om os tekst slut*/
 
 /* Carousel start*/
-#carousel{
+#carousel {
   display: flex;
   overflow-x: scroll;
-  
+
 
 }
 
-.event-show  {
+.event-show {
   background-color: #00454E;
   border-radius: 25px;
   padding: 30px;
@@ -190,6 +191,7 @@ a {
   width: 400px;
   height: 370px;
 }
+
 /* Carousel slut*/
 
 /* Event show start*/
@@ -290,18 +292,19 @@ h8 {
   font-size: 20px;
 }
 
-.knap-center{
+.knap-center {
   display: flex;
   justify-content: space-around;
 }
 
 /* Resultat slut */
 
-.marginstyrer{
+.marginstyrer {
   position: relative;
   background: none;
   justify-content: center;
 }
+
 /* Eventuelt se nærmere på styling gennem media query. I dette tilfælde i forhold til .marginstyrer
 Følg link - https://gist.github.com/OliverJAsh/1ebecee004e1bbc816e0b65086c7abee */
 
@@ -398,7 +401,8 @@ select {
   background-color: white;
   border-radius: 10px;
 }
-.helekalender time{
+
+.helekalender time {
   display: flex;
   align-items: center;
   padding: 25px 30px 20px;
@@ -406,13 +410,13 @@ select {
 }
 
 /*Måneds overskrift*/
-time .idag{
+time .idag {
   font-size: 24px;
   font-weight: bold;
 }
 
 /*pil design*/
-time .pil span{
+time .pil span {
   height: 38px;
   width: 38px;
   color: #878787;
@@ -423,10 +427,12 @@ time .pil span{
   cursor: pointer;
   border-radius: 50%;
 }
-time .pil span:hover{
-  background: #f2f2f2;   
+
+time .pil span:hover {
+  background: #f2f2f2;
 }
-time .pil span:last-child{
+
+time .pil span:last-child {
   margin-right: -10px;
 }
 
@@ -434,36 +440,43 @@ time .pil span:last-child{
 .kalender {
   padding: 20px;
 }
-.kalender ul{
-display: flex;
-list-style: none;
-flex-wrap: wrap;
-text-align: center
+
+.kalender ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center
 }
-.kalender .dage{
+
+.kalender .dage {
   margin-bottom: 20px;
 }
-.kalender .uger li{
+
+.kalender .uger li {
   font-weight: 500;
 }
-.kalender ul li{
+
+.kalender ul li {
   position: relative;
   width: calc(100% / 7);
 }
-.kalender .dage li{
+
+.kalender .dage li {
   cursor: pointer;
   margin-top: 30px;
   z-index: 1;
 }
-.dage li.inaktiv{
+
+.dage li.inaktiv {
   color: #aaa;
 }
-.dage li.aktiv{
+
+.dage li.aktiv {
   color: #fff;
 }
 
 /*Pågældende dag*/
-.kalender .dage li::before{
+.kalender .dage li::before {
   position: absolute;
   content: "";
   height: 40px;
@@ -474,20 +487,23 @@ text-align: center
   transform: translate(-50%, -50%);
   z-index: -1;
 }
-.dage li:hover::before{
+
+.dage li:hover::before {
   background: #f2f2f2;
 }
-.dage li.aktiv::before{
+
+.dage li.aktiv::before {
   background: #00454E;
 }
 
 /*I dag*/
-#nu{
+#nu {
   border-radius: 50%;
   color: black;
   content: "";
 }
-#nu::before{
+
+#nu::before {
   height: 40px;
   width: 40px;
   background-color: #F1C9CD;
@@ -577,7 +593,7 @@ button1 {
 header {
   background-color: #E4F1F0;
   padding: 35px 20px;
-  
+
 }
 
 .head-flex {
@@ -591,14 +607,14 @@ header {
   height: 50px;
 }
 
-.headloginhb{
+.headloginhb {
   display: flex;
   align-items: center;
 }
 
 
 /*Baggrund til login boks*/
-.headcontain{
+.headcontain {
   position: relative;
   background: none;
   display: flex;
@@ -607,7 +623,7 @@ header {
 }
 
 
-.headbacktxt{
+.headbacktxt {
   color: #00454E;
   position: absolute;
   top: 0;
@@ -620,7 +636,7 @@ header {
 }
 
 /* Event kommende sprint 3*/
-.kom-event-contain{
+.kom-event-contain {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -628,7 +644,8 @@ header {
   flex-wrap: wrap;
 }
 
-.event-kommende p, h2{
+.event-kommende p,
+h2 {
   color: #00454E;
 }
 
@@ -636,7 +653,8 @@ header {
   padding-top: 20px;
   background-color: #E4F1F0;
 }
-.kom-event-item-contain{
+
+.kom-event-item-contain {
   position: relative;
   margin: 24px;
   width: 300px;
@@ -653,7 +671,8 @@ header {
   height: 570px;
 }
 
-.kom-event-img-contain, .kom-event-body-contain {
+.kom-event-img-contain,
+.kom-event-body-contain {
   position: absolute;
   top: 0;
   left: 0;
@@ -661,12 +680,12 @@ header {
   height: 100%;
 }
 
-.kom-event-img-contain img{
+.kom-event-img-contain img {
   width: 100%;
 }
 
-.kom-event-body-contain{
-position: relative;
+.kom-event-body-contain {
+  position: relative;
 }
 
 .kom-event-overlay {
@@ -692,14 +711,15 @@ position: relative;
   padding: 8px;
 }
 
-.kom-event-title, .kom-event-price {
-font-weight: bold;
-font-size: 25px;
+.kom-event-title,
+.kom-event-price {
+  font-weight: bold;
+  font-size: 25px;
 }
 
 .kom-evnt-pinfo {
-letter-spacing: 0.5px;
-margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
 }
 
 .kom-event-seperator {
@@ -717,11 +737,11 @@ margin-bottom: 6px;
   padding-bottom: 0;
 }
 
-.kom-event-mere-info .kom-event-pinfo{
+.kom-event-mere-info .kom-event-pinfo {
   margin-bottom: 20px;
 }
 
-.kom-event-pinfo span{
+.kom-event-pinfo span {
   font-weight: bold;
 }
 
@@ -908,6 +928,7 @@ p {
 .bm-links {
   margin-top: 30px;
 }
+
 .bm-links a {
   font-size: 30px;
   font-weight: 700;
@@ -961,24 +982,24 @@ p {
 }
 
 .loginwrap .ikon-luk {
-position: absolute;
-top: 0;
-right: 0;
-width: 40px;
-height: 40px;
-background: #00454E;
-color: #E4F1F0;
-display: flex;
-justify-content: center;
-align-items: center;
-border-bottom-left-radius: 20px;
-cursor: pointer;
-z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: #00454E;
+  color: #E4F1F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .form-box-login h2 {
- color: #00454E;
- text-align: center; 
+  color: #00454E;
+  text-align: center;
 }
 
 .loginwrap .form-box-login.login {
@@ -1150,7 +1171,7 @@ footer {
 }
 
 /*Afstemning om events*/
-.ur-contain{
+.ur-contain {
   width: 100vw;
   height: 70vh;
   background-image: url(image/party_back.jpg);
@@ -1180,7 +1201,7 @@ footer {
 }
 
 .ur-content button {
-  background: #00454E ;
+  background: #00454E;
   border: none;
   padding: 20px 40px;
   border-radius: 8px;
@@ -1196,11 +1217,11 @@ footer {
   background-color: #00796B;
 }
 
-.ur-launch-time{
+.ur-launch-time {
   display: flex;
 }
 
-.ur-launch-time div{
+.ur-launch-time div {
   flex-basis: 100px;
 }
 
@@ -1215,4 +1236,11 @@ footer {
 
 .headerHvid {
   background-color: white;
+}
+
+@media (min-width: 1000px) {
+  #carousel {
+    display: flex;
+    justify-content: center;
+  }
 }

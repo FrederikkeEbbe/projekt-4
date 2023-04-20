@@ -41,12 +41,15 @@ ikonLuk.addEventListener('click', ()=> {
 //Jacob
 
 //Jasmin
+//Kør til top
 function totop() {
 	window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
+//Kør tiltop() når man scroller
 window.onscroll = function() {tiltop()};
 
+//Hvis indenfor 50px, tilegn da en class
 function tiltop() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop < 50) {
     document.getElementById("tops").className = "forsvind";

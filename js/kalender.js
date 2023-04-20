@@ -1,21 +1,20 @@
-const nuværendeDato = document.querySelector(".idag");
-//hvorfor kan getElementsByClassName("idag") ikke bruges?
-dageTag = document.querySelector(".dage");
-pile = document.querySelectorAll(".pil span");
-let neutraldage;
+const nuværendeDato = document.querySelector(".idag");  //Konstant der referere til en class
+const dageTag = document.querySelector(".dage");        //Konstant der referere til en class
+const pile = document.querySelectorAll(".pil span");    //Konstant der referere til en class med alle span-elementer
+let neutraldage;                                        //Opretter en tom variabel til inaktive dage
 
-let dato = new Date(),
-detteAar = dato.getFullYear(),
-denneMaaned = dato.getMonth();
-let aktivdato = new Date();
+let dato = new Date();                                  //Generere nuværende tidspunkt (år, måned, dag, time, minut, sekundt)
+let detteAar = dato.getFullYear();                      //Beder om nuværende år igennem variablen dato
+let denneMaaned = dato.getMonth();                      //Beder om nuværende måned igennem variablen dato
+let aktivdato = new Date();                             //Generere nuværende tidspunkt
 
 const maaned = ["Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"]
 
 const renderCalendar = () => {
-    let forsteDatoIMaaneden = new Date(detteAar, denneMaaned, 1).getDay(),
-    sidsteDatoIMaaneden = new Date(detteAar, denneMaaned + 1, 0).getDate(),
-    sidsteDagIMaaneden = new Date(detteAar, denneMaaned, sidsteDatoIMaaneden).getDay(),
-    sidsteDatoAfSidsteMåned = new Date(detteAar, denneMaaned, 0).getDate();        
+    let forsteDatoIMaaneden = new Date(detteAar, denneMaaned, 1).getDay();
+    let sidsteDatoIMaaneden = new Date(detteAar, denneMaaned + 1, 0).getDate();
+    let sidsteDagIMaaneden = new Date(detteAar, denneMaaned, sidsteDatoIMaaneden).getDay();
+    let sidsteDatoAfSidsteMåned = new Date(detteAar, denneMaaned, 0).getDate();        
     let liTag = "";
 
     for (let i = forsteDatoIMaaneden; i > 1; i--) {
@@ -52,25 +51,25 @@ const renderCalendar = () => {
         });
     });
 }
-renderCalendar();
+renderCalendar();                               //Opdater kalenderen
 
 
-pile.forEach(pil => {
-    pil.addEventListener("click", () => {
-        if (pil.id == "forrige") {
-            denneMaaned -= 1;
-            if (denneMaaned == -1) {
-                denneMaaned = 11;
-                detteAar -= 1;
+pile.forEach(pil => {                           //Kør kode for begge pile
+    pil.addEventListener("click", () => {       //Når klik, kør da følgende
+        if (pil.id == "forrige") {              //Hvis id'et på pil = forrige, kør da følgende
+            denneMaaned -= 1;                   //Tilbage 1 måned
+            if (denneMaaned == -1) {            //Hvis januar, som er måned 0, og dermed -1, kør nedenstående
+                denneMaaned = 11;               //Bliv til måned 11 hvis ovenstående
+                detteAar -= 1;                  //Træk et år fra
             }
         } else {
-            denneMaaned += 1;
-            if (denneMaaned == 12) {
-                denneMaaned = 0;
-                detteAar += 1;
+            denneMaaned += 1;                   //Frem 1 måned
+            if (denneMaaned == 12) {            //Hvis december, som er måned 11, og dermed 12, kør nedenstående
+                denneMaaned = 0;                //Bliv til måned 0 hvis ovenstående
+                detteAar += 1;                  //Læg et år til
             }
         }
-        renderCalendar();
+        renderCalendar();                       //Opdater kalenderen
     });
 });
 
