@@ -1,5 +1,5 @@
  // Array med det data som skal randomize
-  const events = [
+  let events = [
     {
       imgSrc: 'image/event-boardgame.jpg',
       imgAlt: 'Brætspil Monopoly',
@@ -41,7 +41,7 @@
   function randomizeEvents() {
     let randomizedEvents = [];
     while (randomizedEvents.length < events.length) {
-      const index = Math.floor(Math.random() * events.length);
+      let index = Math.floor(Math.random() * events.length);
       if (!randomizedEvents.includes(events[index])) {
         randomizedEvents.push(events[index]);
       }
@@ -50,14 +50,14 @@
   }
 
   // Kalder funktionen
-  const randomizedEvents = randomizeEvents();
+  let randomizedEvents = randomizeEvents();
 
   // create a variable to store the HTML for the carousel
   let carouselHTML = '';
 
   // Looper igennem de randomized elementer i eventet tilføjer det til carouselHTML variablen
   for (let i = 0; i < randomizedEvents.length; i++) {
-    const event = randomizedEvents[i];
+    let event = randomizedEvents[i];
     carouselHTML += `
       <div class="event-show">
         <img src="${event.imgSrc}" class="event-show-pic" alt="${event.imgAlt}">
